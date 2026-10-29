@@ -1,0 +1,55 @@
+baseURL: "https://wanhu-bid.pages.dev/"
+defaultContentLanguage: zh
+
+languages:
+  zh:
+    label: "简体中文"
+    locale: zh-CN
+    title: "科幻黑暗势力，记录科幻阅读历史"
+theme: "PaperMod"
+paginate: 10
+enableRobotsTXT: true
+summaryLength: 100
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  author: "万户"
+  description: "科幻、奇幻、九州资讯，游戏感受。"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowToc: true
+  TocOpen: false
+  ShowCodeCopyButtons: true
+  ShowShareButtons: false
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
