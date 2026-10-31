@@ -1,0 +1,21 @@
+/* 衬线阅读体：正文、标题、首页条目标题改用衬线栈；界面 chrome（导航、meta、页脚）保持主题默认无衬线。 */
+
+.md-content,
+.post-title,
+.post-description,
+.entry-header h2 {
+    font-family: Georgia, 'Times New Roman', 'Songti SC', 'STSong', 'SimSun', 'Noto Serif CJK SC', 'Source Han Serif SC', serif;
+}
+
+/* 衬线下正文行距略放宽，中文长文阅读更舒服。 */
+.md-content {
+    line-height: 1.8;
+}
+
+/* 代码仍用等宽字体，不随正文衬线化。 */
+.md-content code,
+.md-content pre,
+.md-content kbd,
+.md-content samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+}
